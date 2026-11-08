@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="KOORA AFRICA : découvrez les meilleures spécialités sénégalaises et africaines.">
+
+    <title>KOORA AFRICA | Cuisine africaine authentique</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#accueil" class="logo">
+                <span>KOORA</span> AFRICA
+                <small>LE GOÛT DE NOS RACINES</small>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="#accueil">Accueil</a>
+
+                <a href="#apropos">Notre histoire</a>
+
+                <a href="#menu">Nos spécialités</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <button class="cart-button" onclick="toggleCart()">
+                🛒 Panier
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= ACCUEIL ================= -->
+
+    <section class="hero" id="accueil">
+
+        <div class="hero-content">
+
+            <p class="subtitle">
+                BIENVENUE CHEZ KOORA AFRICA
+            </p>
+
+            <h1>
+                L'Afrique a<br>
+                <span>du goût et du cœur.</span>
+            </h1>
+
+            <p class="hero-description">
+                De Dakar à Abidjan, de Lagos à Yaoundé,
+                découvrez les trésors culinaires de notre continent.
+
+                Des recettes authentiques, des saveurs généreuses
+                et une tradition qui se partage.
+            </p>
+
+            <a href="#menu" class="main-button">
+                Découvrir nos saveurs →
+            </a>
+
+        </div>
+
+        <div class="hero-tag">
+
+            <span>100%</span>
+
+            <p>Passion africaine</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOTRE HISTOIRE ================= -->
+
+    <section class="about" id="apropos">
+
+        <div class="about-image"></div>
+
+        <div class="about-content">
+
+            <p class="subtitle">
+                NOTRE HISTOIRE
+            </p>
+
+            <h2>
+                Une cuisine qui raconte l'histoire de l'Afrique.
+            </h2>
+
+            <p>
+                Chez KOORA AFRICA, chaque plat raconte une histoire.
+                Une histoire de famille, de partage, de tradition
+                et de savoir-faire transmis de génération en génération.
+            </p>
+
+            <p>
+                Notre inspiration vient principalement du Sénégal,
+                de ses marchés colorés, de ses recettes traditionnelles
+                et de sa célèbre teranga.
+            </p>
+
+            <p>
+                Nous célébrons également les richesses culinaires
+                des autres pays africains.
+            </p>
+
+            <a href="#menu" class="main-button">
+                Explorer notre cuisine
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOTRE MENU ================= -->
+
+    <section class="menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <p class="subtitle">
+                LES SAVEURS DU SÉNÉGAL ET D'AFRIQUE
+            </p>
+
+            <h2>
+                Notre cuisine, notre fierté.
+            </h2>
+
+            <p>
+                Des plats traditionnels préparés avec passion.
+            </p>
+
+        </div>
+
+
+        <!-- FILTRES DES PLATS -->
+
+        <div class="filters">
+
+            <button class="filter active" data-category="tous">
+                Tous les plats
+            </button>
+
+            <button class="filter" data-category="senegal">
+                🇸🇳 Sénégal
+            </button>
+
+            <button class="filter" data-category="afrique">
+                🌍 Afrique
+            </button>
+
+            <button class="filter" data-category="boissons">
+                🥤 Boissons
+            </button>
+
+        </div>
+
+
+        <!-- LES PLATS SONT CHARGÉS PAR JAVASCRIPT -->
+
+        <div class="food-grid" id="foodGrid">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BANNIÈRE ================= -->
+
+    <section class="banner">
+
+        <div>
+
+            <p class="subtitle">
+                UNE CULTURE, MILLE SAVEURS
+            </p>
+
+            <h2>
+                La teranga dans chaque assiette.
+            </h2>
+
+            <p>
+                Plus qu'un repas, une invitation au voyage,
+                au partage et à la découverte.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <p class="subtitle">
+            NOUS SOMMES À VOTRE ÉCOUTE
+        </p>
+
+        <h2>
+            Partageons ensemble le goût de l'Afrique.
+        </h2>
+
+        <p>
+            Venez découvrir nos spécialités et vivre
+            une expérience culinaire authentique.
+        </p>
+
+
+        <div class="contact-info">
+
+            <div>
+
+                <span>📍</span>
+
+                <h3>Notre adresse</h3>
+
+                <p>THIES- Mbour1 – Sénégal</p>
+
+            </div>
+
+
+            <div>
+
+                <span>📞</span>
+
+                <h3>Téléphone</h3>
+
+                <p>+221 78 758 75 75</p>
+
+            </div>
+
+
+            <div>
+
+                <span>🕒</span>
+
+                <h3>Horaires</h3>
+
+                <p>Tous les jours : 10h – 23h</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PANIER ================= -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        onclick="toggleCart()">
+    </div>
+
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>Mon panier 🛒</h2>
+
+            <button onclick="toggleCart()">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Votre panier est vide.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <h3>
+                Total :
+                <span id="cartTotal">0</span> FCFA
+            </h3>
+
+            <button
+                class="main-button"
+                onclick="checkout()">
+
+                Commander
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+            KOORA <span>AFRICA</span>
+        </h2>
+
+        <p>
+            L'âme de l'Afrique dans chaque assiette.
+        </p>
+
+        <p class="copyright">
+            © 2026 KOORA AFRICA - Tous droits réservés.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
